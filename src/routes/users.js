@@ -5,7 +5,11 @@ const router = express.Router()
 
 /* GET users listing. */
 router.get('/', (req, res) => {
-  res.send('respond with a resource')
+  res.send(users)
+})
+
+router.get('/armagan', (req, res) => {
+  res.send(users[0])
 })
 
 router.get('/:name', (req, res) => {
@@ -17,7 +21,11 @@ router.get('/:name', (req, res) => {
       message: `No user with name ${req.params.name} found`,
     })
 
-  return user
+  return res.send(user)
+})
+
+router.get('/:userId', (req, res) => {
+  return res.send(users[req.params.userId])
 })
 
 module.exports = router
