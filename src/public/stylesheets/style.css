@@ -1,7 +1,12 @@
-body {
+* { 
+  box-sizing: border-box;
+  position: relative;
+}
+  
+  body {
   padding: 50px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
-  color: red
+  color: black;
 }
 
 a {
@@ -9,14 +14,23 @@ a {
 }
 
 .answer {
-  font-weight: bold
+  font-weight: bold;
+  display: block;
+  border: 1px solid black;
+  border-radius: 5px;
+  padding: 3px;
+  width: 80px;
+  height: 40px;
+  line-height: 32px;
+  margin: 50px;
+  text-align: center;
 }
 
-.answer-yes {
-  color: coral
-}
-
-.answer-no {
-  color: darkmagenta
-  font-weight: normal
-}
+  .answer-yes {
+    color: green;
+  }
+  
+  .answer-no {
+    font-weight: normal;
+  }
+  
