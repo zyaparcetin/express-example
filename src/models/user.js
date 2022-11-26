@@ -22,7 +22,7 @@ class User {
     this.basket.push(product)
   }
 
-  makeReview(product, text, rate) {
+  review(product, text, rate) {
     const review = new Review(text, rate, this)
     this.reviews.push(review)
     product.reviews.push(review)
