@@ -1,10 +1,10 @@
-const express = require('express')
+/* const express = require('express')
 const { users } = require('../models')
 
 const router = express.Router()
 
 /* GET users listing. */
-router.get('/', (req, res) => {
+/* router.get('/', (req, res) => {
   res.send(users)
 })
 
@@ -28,4 +28,4 @@ router.get('/:userId', (req, res) => {
   return res.send(users[req.params.userId])
 })
 
-module.exports = router
+module.exports = router */
