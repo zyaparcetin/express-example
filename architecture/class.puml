@@ -10,7 +10,7 @@ class User {
   greet()
   likeProduct(product: Product)
   addToBasket(product: Product)
-  makeReview(product: Product, text: string, rate: number)
+  review(product: Product, text: string, rate: number)
 }
 
 class Product {
