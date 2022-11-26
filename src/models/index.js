@@ -7,6 +7,9 @@ const mete = new User('mete', 7)
 
 const teddyBear = new Product('teddy bear', 19.99)
 const kitty = new Product('kitty', 14.99)
+const bunny = new Product('bunny', 9.99)
+const froglet = new Product('froglet', 9.99)
+const products = [teddyBear, kitty, bunny, froglet]
 
 kerem.addToBasket(kitty)
 mete.addToBasket(teddyBear)
