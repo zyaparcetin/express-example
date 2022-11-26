@@ -14,7 +14,7 @@ mete.addToBasket(teddyBear)
 console.log(kerem)
 console.log(mete)
 
-// module.exports = { users }
+// module.exports = { users }   bunu yazmali miyim?
 
 /* const User = require('./user')
 
