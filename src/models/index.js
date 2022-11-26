@@ -11,13 +11,21 @@ const bunny = new Product('bunny', 9.99)
 const froglet = new Product('froglet', 9.99)
 const products = [teddyBear, kitty, bunny, froglet]
 
+mete.greet()
+
 kerem.addToBasket(kitty)
 mete.addToBasket(teddyBear)
+
+kerem.likeProduct(kitty)
+
+kerem.review(kitty, 'Wonderful toy!', 5)
 
 console.log(kerem)
 console.log(mete)
 
-// module.exports = { users }   bunu yazmali miyim?
+console.log(kitty)
+
+module.exports = { products }
 
 /* const User = require('./user')
 
