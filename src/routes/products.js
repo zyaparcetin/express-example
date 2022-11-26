@@ -10,13 +10,12 @@ router.get('/', (req, res) => {
 
 router.get('/:productId', (req, res) => {
   const product = products[req.params.productId]
-  return res.send(product)
-
-  /* if (!product)
+  if (!product)
     return res.render('error', {
       error: { status: 404 },
       message: `No product with id ${req.params.id} found`,
-    }) */
+    })
+  return res.send(product)
 })
 
 module.exports = router
