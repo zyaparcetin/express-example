@@ -4,11 +4,11 @@ const { products } = require('../models')
 const router = express.Router()
 
 /* GET products listing. */
-router.get('/', (req, res) => {
+router.get('/', (req, res, next) => {
   res.send(products)
 })
 
-router.get('/:productId', (req, res) => {
+router.get('/:productId', (req, res, next) => {
   const product = products[req.params.productId]
   if (!product)
     return res.render('error', {
