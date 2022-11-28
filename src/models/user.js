@@ -15,7 +15,7 @@ class User {
 
   likeProduct(product) {
     this.likes.push(product)
-    product.likedBy.push(this)
+    product.likedBy.push(this.name)
   }
 
   addToBasket(product) {
