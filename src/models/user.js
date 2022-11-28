@@ -23,7 +23,7 @@ class User {
   }
 
   review(product, text, rate) {
-    const review = new Review(text, rate, this)
+    const review = new Review(text, rate, this.name)
     this.reviews.push(review)
     product.reviews.push(review)
   }
